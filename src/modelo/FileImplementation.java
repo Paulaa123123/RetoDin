@@ -5,10 +5,19 @@
  */
 package modelo;
 
+import java.util.ResourceBundle;
+
 /**
  *
- * @author 2dam
+ * @author david,paula
  */
-public class FileImplementation {
+public class FileImplementation implements Model{
+
+    @Override
+    public String getGreeting() {
+        /*ResourceBundle rb = ResourceBundle.getBundle("modelo.configbda");
+        String text = rb.getString("greeting");*/
+        return ResourceBundle.getBundle("modelo.configbda").getString("greeting");
+    }
     
 }

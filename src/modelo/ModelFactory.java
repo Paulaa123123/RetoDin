@@ -5,16 +5,18 @@
  */
 package modelo;
 
+import java.util.ResourceBundle;
+
 /**
  *
- * @author 2dam
+ * @author david,paula
  */
 public class ModelFactory {
-    public static DAO getDaoBDA(){
-        return new DAOImplementationBD();
-    }
+    /*public static Model getImplementationDB(){
+        return new DBImplementation();
+    }*/
     
-    public static FileImplementation getFileImplementation(){
+    public static Model getModel(){
         return new FileImplementation();
     }
 }

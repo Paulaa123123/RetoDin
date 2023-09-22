@@ -7,8 +7,13 @@ package modelo;
 
 /**
  *
- * @author 2dam
+ * @author david,paula
  */
-public class ViewImplementation implements{
+public class ViewImplementation implements View{
+
+    @Override
+    public void showGreeting(String greeting) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

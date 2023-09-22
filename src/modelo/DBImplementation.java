@@ -9,12 +9,11 @@ package modelo;
  *
  * @author david,paula
  */
-public class ViewFactory {
-    /*public static View getTextImplementation(){
-        return new TextImplementation();
-    }*/
-    
-    public static View getView(){
-        return new TextImplementation();
+public class DBImplementation implements Model{
+
+    @Override
+    public String getGreeting() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+    
 }

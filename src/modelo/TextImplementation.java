@@ -7,8 +7,13 @@ package modelo;
 
 /**
  *
- * @author 2dam
+ * @author david,paula
  */
-public class TextImplementation implements InterfaceView{
+public class TextImplementation implements View{
+
+    @Override
+    public void showGreeting(String greeting) {
+        System.out.println(greeting);
+    }
     
 }

@@ -9,12 +9,6 @@ package modelo;
  *
  * @author david,paula
  */
-public class ViewFactory {
-    /*public static View getTextImplementation(){
-        return new TextImplementation();
-    }*/
-    
-    public static View getView(){
-        return new TextImplementation();
-    }
+public interface Model {
+    public String getGreeting();
 }
