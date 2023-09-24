@@ -17,7 +17,7 @@ public class FileImplementation implements Model{
     public String getGreeting() {
         /*ResourceBundle rb = ResourceBundle.getBundle("modelo.configbda");
         String text = rb.getString("greeting");*/
-        return ResourceBundle.getBundle("modelo.configbda").getString("greeting");
+        return ResourceBundle.getBundle("modelo.greeting").getString("greeting");
     }
     
 }

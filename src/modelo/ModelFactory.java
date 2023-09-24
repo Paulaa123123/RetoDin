@@ -17,6 +17,14 @@ public class ModelFactory {
     }*/
     
     public static Model getModel(){
-        return new FileImplementation();
+        
+        String model = ResourceBundle.getBundle("app.archivo").getString("model");
+        
+        if(model.equalsIgnoreCase("file")){
+            return new FileImplementation();
+        } else{
+            return new DBImplementation();
+        }
+        
     }
 }

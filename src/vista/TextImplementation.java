@@ -3,18 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package controller;
-
-import modelo.Model;
-import vista.View;
+package vista;
 
 /**
  *
- * @author 2dam
+ * @author david,paula
  */
-public class Controller {
-    public void run(View view, Model model){
-        view.showGreeting(model.getGreeting());
-        
+public class TextImplementation implements View{
+
+    @Override
+    public void showGreeting(String greeting) {
+        System.out.println(greeting);
     }
+    
 }

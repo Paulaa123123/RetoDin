@@ -18,20 +18,39 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import modelo.ModelFactory;
-import modelo.TextImplementation;
-import modelo.ViewFactory;
+import vista.TextImplementation;
+import vista.ViewFactory;
 import modelo.Model;
-import modelo.View;
+import vista.FXMLController;
+import vista.View;
 
 /**
  *
  * @author 2dam
  */
-public class Application{
+public class Application extends javafx.application.Application{
 
     public static void main(String[] args) {
         
     new Controller().run(ViewFactory.getView(), ModelFactory.getModel());
+    }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("vista.view.fxml"));
+        
+        Parent root = loader.load();
+       
+        FXMLController viewController = loader.getController();
+        //viewController.setGreeting(greeting);
+//Create a scene for view
+        Scene scene = new Scene(root);
+        //Put the view on Stage
+        primaryStage.setScene(scene);
+        //Show the stage
+        
+        primaryStage.showAndWait();
     }
 
 
