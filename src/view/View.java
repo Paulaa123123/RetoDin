@@ -3,18 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package controller;
-
-import model.Model;
-import view.View;
+package view;
 
 /**
- *
+ * Interfaz de la vista.
  * @author David,Paula.
  */
-public class Controller {
-    public void run(View view, Model model){
-        view.showGreeting(model.getGreeting());
-        
-    }
+public interface View {
+    public void showGreeting(String greeting);
 }
