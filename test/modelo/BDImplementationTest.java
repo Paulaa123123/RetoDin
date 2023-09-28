@@ -33,7 +33,7 @@ public class BDImplementationTest {
     
     @Test
     public void testGetGreeting() {
-        assertEquals("Hello World", dbImp.getGreeting());
+        assertEquals("Hello World from the database.", dbImp.getGreeting());
     }
     
     @After

@@ -23,7 +23,7 @@ public class FileImplementationTest {
     @Test
     public void testGetGreeting() {
         FileImplementation fi = new FileImplementation();
-        assertEquals("Hello World33", fi.getGreeting());
+        assertEquals("Hello World from the file.", fi.getGreeting());
     }
 
 }
