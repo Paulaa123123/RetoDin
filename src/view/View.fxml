@@ -5,6 +5,6 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ViewImplementation">
    <children>
-      <Label fx:id="greeting" layoutX="239.0" layoutY="175.0" prefHeight="51.0" prefWidth="123.0" text="Label" />
+      <Label fx:id="greeting" layoutX="239.0" layoutY="175.0" prefHeight="51.0" prefWidth="337.0" text="Label" />
    </children>
 </Pane>
