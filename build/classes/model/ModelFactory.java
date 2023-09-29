@@ -3,19 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modelo;
+package model;
 
 import java.util.ResourceBundle;
 
 /**
- *
- * @author david,paula
+ * Factoría para crear la implementación correcta del modelo.
+ * @author David,Paula.
  */
 public class ModelFactory {
-    /*public static Model getImplementationDB(){
-        return new DBImplementation();
-    }*/
-    
+    //Método que devuelve la implementacion correcta del modelo.
     public static Model getModel(){
         
         String model = ResourceBundle.getBundle("app.archivo").getString("model");
@@ -23,7 +20,7 @@ public class ModelFactory {
         if(model.equalsIgnoreCase("file")){
             return new FileImplementation();
         } else{
-            return new DBImplementation();
+            return new BDImplementation();
         }
         
     }

@@ -3,20 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package vista;
+package view;
 
-import vista.ViewImplementation;
+import view.ViewImplementation;
 import java.util.ResourceBundle;
 
 /**
- *
- * @author david,paula
+ * Factoría para crear la implementación correcta de la vista.
+ * @author David,Paula.
  */
 public class ViewFactory {
-    /*public static View getTextImplementation(){
-        return new TextImplementation();
-    }*/
-    
+    //Método que devuelve la implementacion correcta de la vista.
     public static View getView(){
         
         String view = ResourceBundle.getBundle("app.archivo").getString("view");

@@ -3,21 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modelo;
+package model;
 
 import java.util.ResourceBundle;
 
 /**
- *
- * @author david,paula
+ * Implementación del archivo de donde obtenemos el valor del saludo.
+ * @author David,Paula.
  */
 public class FileImplementation implements Model{
 
+    //Método que obtiene el valor de la variable saludo del archivo donde se encuentra.
     @Override
     public String getGreeting() {
-        /*ResourceBundle rb = ResourceBundle.getBundle("modelo.configbda");
-        String text = rb.getString("greeting");*/
-        return ResourceBundle.getBundle("modelo.greeting").getString("greeting");
+        return ResourceBundle.getBundle("app.greeting").getString("greeting");
     }
     
 }

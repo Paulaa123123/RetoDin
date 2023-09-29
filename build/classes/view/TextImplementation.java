@@ -3,17 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modelo;
+package view;
 
 /**
- *
- * @author david,paula
+ * Implementacion que muestra el saludo por texto.
+ * @author David,Paula.
  */
-public class TextImplementation implements View{
+public class TextImplementation implements View {
 
+    /**
+     * Método que muestra el saludo que le llega por parámetro.
+     * @param greeting el saludo que le llega por parámetro.
+     */
     @Override
     public void showGreeting(String greeting) {
         System.out.println(greeting);
     }
-    
+
 }

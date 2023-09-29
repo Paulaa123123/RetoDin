@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modelo;
+package view;
 
 /**
- *
- * @author david,paula
+ * Interfaz de la vista.
+ * @author David,Paula.
  */
-public interface Model {
-    public String getGreeting();
+public interface View {
+    public void showGreeting(String greeting);
 }

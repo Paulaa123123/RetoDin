@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modelo;
+package model;
 
 /**
- *
- * @author 2dam
+ * Interfaz del modelo.
+ * @author David,Paula.
  */
-public interface InterfaceView {
-    
+public interface Model {
+    public String getGreeting();
 }
